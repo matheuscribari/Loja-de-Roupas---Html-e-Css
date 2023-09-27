@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(287.56deg, #201b2c 0%, #201b2c 100% );
+}
+.search-box{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
+    background:rgba(7, 7, 56);
+    height: 50px;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+::-webkit-input-placeholder{
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #aeaeae;
+ 
+}
+
+.search-text{
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    width: 0;
+    padding: 0;
+    transition: 0.4s;
+    color: white;
+}
+.search-btn{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+.loupe-white{
+    display: none;
+}
+.search-box:hover > .search-text{
+    width: 320px;
+    padding-left: 20px;
+}
+.search-box:hover > .search-btn{
+    background: rgb(7, 7, 56);
+}
+.search-box:hover > .search-btn .loupe-blue{
+    display: none;
+}
+.search-box:hover > .search-btn .loupe-white{
+    display: block;
+}
+.icon{
+    color: #77ffc0;
+    background-color: #77ffc0;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    font-size: 45px;
+}
+.slider{
+    width: 700px;
+    height: 700PX;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 10px;
+    top: 35%;
+    left: 32%;
+
+}
+.slides{
+    display: flex;
+
+}
+.navigation-bar{
+    position: absolute;
+    bottom:20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+
+}
+.slides input{
+    display: none;
+}
+.manual-btn{
+    border: 2px solid #77ffc0;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #201b2c;
+    transition: 0.4s;
+
+} 
+.slides{
+    display: flex;
+    width: 400%;
+    height: 100%;
+
+}
+.slide{
+    width: 25%;
+    transition: 0.5s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#radio1:checked~ .first{
+    margin-left: 0;
+}
+#radio2:checked~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~.first{
+    margin-left: -50%;
+}
+#radio4:checked ~.first{
+    margin-left: -75%;
+}
+.text{
+    color: #77ffc0;
+    font-size: 30px;
+    position: absolute;
+    left: 38%;
+    top: 25%;
+    justify-content: center;
+}
+.img{
+    position: absolute;
+    left: 1.5%;
+    width: 65px;
+    height: 65px;
+    top: 6.5%;
+    background-color: #00ff88;
+    border-radius: 50%;
+    
+}
+.img2{
+    position: absolute;
+    left: 6%;
+    width: 65px;
+    height: 65px;
+    top:6.5%;
+    background-color: #00ff88;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.img3{
+    position: absolute;
+    left: 10.5%;
+    width: 65px;
+    height: 65px;
+    top:6.5%;
+    background-color: #00ff88;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.img4{
+    position: absolute;
+    left: 15%;
+    width: 65px;
+    height: 65px;
+    top: 6.5%;
+    background-color: #00ff88;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert{
+    background-color: blue;
+    color: #201b2c;
+    border-color: #201b2c;
+}
+.alert-danger{
+    border: none;
+}
+.alert{
+    background-color: blue;
+    color: #00ff88;
+    border-color: #201b2c;
+    margin: 0px 0px 0px;
+    padding: 0px;
+    border-radius: 0px;
+}
+.logo{
+    position: absolute;
+    padding: 30px 100px;
+    color: #00ff88;
+    font-weight: 700;
+    text-decoration: none;
+    outline: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+    right: 1.5%;
+    top: 6%;
+}
+.img5{
+    position: absolute;
+    left: 19.5%;
+    width: 65px;
+    height: 65px;
+    top: 6.5%;
+    background-color: #00ff88;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.text2{
+    font-size: 35px;
+    color: #77ffc0;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+
+}
